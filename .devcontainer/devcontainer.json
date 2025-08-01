@@ -54,10 +54,10 @@
 	// // Add recommended secrets
 	"secrets": {
 	 	  "DT_ENDPOINT": {
-	 		"description": "eg. https://abc12345.live.dynatrace.com"
+	 		"description": "eg. https://abc12345.live.dynatrace.com or https://abc12345.sprint.dynatracelabs.com"
 		},
 		  "DT_TOKEN": {
-	    	        "description": "Dynatrace API token"
+	    	        "description": "Dynatrace Operatory token"
 		}
 	}
 }
