@@ -61,7 +61,7 @@ languages that talk to each other over gRPC. It's setup to run inside a Kind Kub
 3. The [Dynatrace OneAgent](https://docs.dynatrace.com/docs/setup-and-configuration/setup-on-k8s) will also be deployed in the cluster using the Dynatrace Operator. You can validate the Operator is running by using the following command:
 
   ```sh
-  kubectl get dynakubes -n dynatrace
+  kubectl get pods -n dynatrace
   ```
 
 It should be in a `Running` state:
