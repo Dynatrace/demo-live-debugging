@@ -32,7 +32,9 @@ RUN KIND_RELEASE=$(curl --silent "https://api.github.com/repos/kubernetes-sigs/k
 RUN curl -Lo skaffold https://storage.googleapis.com/skaffold/releases/latest/skaffold-linux-amd64 \
     && install skaffold /usr/local/bin/
 
-RUN /tmp/scripts/docker.sh
+# Pin Docker version to be compatible with Codespaces daemon (API 1.43)
+# Script parameters: [enable-nonroot] [source-socket] [target-socket] [username] [use-moby] [docker-version]
+RUN /tmp/scripts/docker.sh "true" "/var/run/docker-host.sock" "/var/run/docker.sock" "vscode" "true" "26.1.4"
 
 # change ownership of the home directory
 RUN chown -R ${USERNAME}:${USERNAME} /home/${USERNAME}
