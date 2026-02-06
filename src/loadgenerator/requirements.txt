@@ -61,7 +61,7 @@ requests==2.32.3
     # via locust
 six==1.16.0
     # via python-dateutil
-urllib3==2.2.2
+urllib3==2.6.3
     # via
     #   geventhttpclient
     #   requests
