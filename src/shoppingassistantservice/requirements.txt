@@ -26,13 +26,13 @@ cachetools==5.4.0
     # via google-auth
 certifi==2024.7.4
     # via requests
-cffi==1.16.0
+cffi==2.0.0
     # via cryptography
 charset-normalizer==3.3.2
     # via requests
 click==8.1.7
     # via flask
-cryptography==43.0.0
+cryptography==46.0.5
     # via google-cloud-alloydb-connector
 flask==3.0.3
     # via -r requirements.in
