@@ -50,7 +50,7 @@ markupsafe==2.1.5
     #   flask
     #   jinja2
     #   werkzeug
-msgpack==1.0.8
+msgpack==1.2.3
     # via locust
 psutil==6.0.0
     # via locust
